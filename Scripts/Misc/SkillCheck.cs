@@ -37,7 +37,7 @@ namespace Server.Misc
 		/// </summary>
 		private const int LocationSize = 4;
 
-		public static bool GGSActive { get { return !Siege.SiegeShard; } }
+		public static bool GGSActive { get { return !(Siege.SiegeShard && !Siege.DisableROT); } }
 
 		static SkillCheck()
 		{
@@ -377,7 +377,7 @@ namespace Server.Misc
 			{
 				var skills = from.Skills;
 
-				if (from is PlayerMobile && Siege.SiegeShard)
+				if (from is PlayerMobile && Siege.SiegeShard && !Siege.DisableROT)
 				{
 					var minsPerGain = Siege.MinutesPerGain(from, skill);
 
@@ -458,7 +458,7 @@ namespace Server.Misc
 			#endregion
 
 			if (skill.Lock == SkillLock.Up &&
-				(!Siege.SiegeShard || !(from is PlayerMobile) || Siege.CanGainStat((PlayerMobile)from)))
+				(!(Siege.SiegeShard && !Siege.DisableROT) || !(from is PlayerMobile) || Siege.CanGainStat((PlayerMobile)from)))
 			{
 				var info = skill.Info;
 
@@ -651,7 +651,7 @@ namespace Server.Misc
                             ((BaseCreature)from).HitsMaxSeed++;
                         }
 
-                        if (Siege.SiegeShard && from is PlayerMobile)
+                        if (Siege.SiegeShard && !Siege.DisableROT && from is PlayerMobile)
                         {
                             Siege.IncreaseStat((PlayerMobile)from);
                         }
@@ -678,7 +678,7 @@ namespace Server.Misc
                             ((BaseCreature)from).StamMaxSeed++;
                         }
 
-                        if (Siege.SiegeShard && from is PlayerMobile)
+                        if (Siege.SiegeShard && !Siege.DisableROT && from is PlayerMobile)
                         {
                             Siege.IncreaseStat((PlayerMobile)from);
                         }
@@ -705,7 +705,7 @@ namespace Server.Misc
                             ((BaseCreature)from).ManaMaxSeed++;
                         }
 
-                        if (Siege.SiegeShard && from is PlayerMobile)
+                        if (Siege.SiegeShard && !Siege.DisableROT && from is PlayerMobile)
                         {
                             Siege.IncreaseStat((PlayerMobile)from);
                         }

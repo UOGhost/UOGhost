@@ -33,7 +33,7 @@ namespace Server.Spells.Chivalry
         {
             get
             {
-                return TimeSpan.FromSeconds(1.5);
+                return TimeSpan.FromSeconds(1.5 * Siege.RecallSacredJourneyBaseDelayMultiplier);
             }
         }
         public override double RequiredSkill

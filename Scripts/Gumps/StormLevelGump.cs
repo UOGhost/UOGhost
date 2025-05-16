@@ -294,7 +294,7 @@ namespace Server.Gumps
             else if (from.Map == Map.Internal)
                 destMap = from.LogoutMap == Map.Felucca ? Map.Felucca : Map.Trammel;
             else
-                destMap = from.Kills >= 5 ? Map.Felucca : Map.Trammel;
+                destMap = from.Kills >= Siege.KillsToMurderer ? Map.Felucca : Map.Trammel;
 
             Mobiles.BaseCreature.TeleportPets(from, dest, destMap);
             from.MoveToWorld(dest, destMap);

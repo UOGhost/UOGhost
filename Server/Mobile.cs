@@ -11795,7 +11795,7 @@ namespace Server
 						m_Kills = 0;
 					}
 
-					if ((oldValue >= 5) != (m_Kills >= 5))
+					if ((oldValue >= Config.Get("Siege.KillsToMurderer", 5)) != (m_Kills >= Config.Get("Siege.KillsToMurderer", 5)))
 					{
 						Delta(MobileDelta.Noto);
 						InvalidateProperties();
@@ -11862,7 +11862,7 @@ namespace Server
 		}
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public virtual bool Murderer { get { return m_Kills >= 5; } }
+		public virtual bool Murderer { get { return m_Kills >= Config.Get("Siege.KillsToMurderer", 5); } }
 
 		public bool CheckAlive()
 		{

@@ -75,6 +75,16 @@ namespace Server.Misc
             new CityInfo("Britain",	"The Wayfarer's Inn",	1075074, 1602,	1591,	20, Map.Felucca),
             new CityInfo("Royal City", "Royal City Inn", 1150169, 738, 3486, -19, Map.TerMur)
         };
+        private static readonly CityInfo[] CustomSiegeStartingCities = new CityInfo[]
+        {
+            new CityInfo("Britain",	"The Wayfarer's Inn",	1075074, 1602,	1591,	20, Map.Felucca),
+            new CityInfo("Yew", "The Empath Abbey",	1075072, 633,	858,	0, Map.Felucca),
+            new CityInfo("Minoc", "The Barnacle", 1075073, 2476,	413,	15, Map.Felucca),
+            new CityInfo("Moonglow",	"The Scholars Inn",	1075075, 4408,	1168,	0, Map.Felucca),
+            new CityInfo("Trinsic",	"The Traveler's Inn",	1075076, 1845,	2745,	0, Map.Felucca),
+            new CityInfo("Jhelom", "The Mercenary Inn",	1075078, 1374,	3826,	0, Map.Felucca),
+            new CityInfo("Skara Brae",	"The Falconer's Inn",	1075079, 618,	2234,	0, Map.Felucca),
+        };
 
         /* Old Haven/Magincia Locations
         new CityInfo( "Britain", "Sweet Dreams Inn", 1496, 1628, 10 );
@@ -389,7 +399,11 @@ namespace Server.Misc
 
                 if(Siege.SiegeShard)
                 {
-                    e.CityInfo = SiegeStartingCities;
+                    if (Siege.UseCustomStartingCities) {
+                        e.CityInfo = CustomSiegeStartingCities;
+                    } else {
+                        e.CityInfo = SiegeStartingCities;
+                    }
                 }
                 else if (!Core.UOR)
                 {

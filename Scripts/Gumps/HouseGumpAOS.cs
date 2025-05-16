@@ -855,11 +855,11 @@ namespace Server.Gumps
 
                 if ((house is BaseContestHouse && ((BaseContestHouse)house).HouseType == ContestHouseType.Keep) || house is Keep)
                 {
-                    entries = HousePlacementEntry.HousesEJ.Where(e => e.MultiID != house.ItemID && (e.MultiID == 0x007C || e.MultiID == 0x147E || e.MultiID >= 0x1484)).ToArray();
+                    entries = HousePlacementEntry.HousesEJ.Where(e => e.MultiID != house.ItemID && (e.MultiID == 0x007C || e.MultiID == 0x147E || (e.MultiID >= 0x1484 && e.MultiID <= 0x1489))).ToArray();
                 }
                 else if ((house is BaseContestHouse && ((BaseContestHouse)house).HouseType == ContestHouseType.Castle) || house is Castle)
                 {
-                    entries = HousePlacementEntry.HousesEJ.Where(e => e.MultiID != house.ItemID && (e.MultiID == 0x007E || (e.MultiID >= 0x147F && e.MultiID <= 0x1483))).ToArray();
+                    entries = HousePlacementEntry.HousesEJ.Where(e => e.MultiID != house.ItemID && (e.MultiID == 0x007E || (e.MultiID >= 0x147F && e.MultiID <= 0x1483) || (e.MultiID >= 0x148A && e.MultiID <= 0x148F))).ToArray();
                 }
 
                 if (entries != null)

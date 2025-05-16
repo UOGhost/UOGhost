@@ -434,7 +434,7 @@ namespace Server.Mobiles
         public const bool BondingEnabled = true;
 
         public virtual bool IsBondable { get { return (BondingEnabled && !Summoned && !m_Allured && !IsGolem); } }
-        public virtual TimeSpan BondingDelay { get { return TimeSpan.FromDays(7.0); } }
+        public virtual TimeSpan BondingDelay { get { return TimeSpan.FromDays(Siege.PetBondingDelay); } }
         public virtual TimeSpan BondingAbandonDelay { get { return TimeSpan.FromDays(1.0); } }
 
         public override bool CanRegenHits { get { return !m_IsDeadPet && !Summoned && base.CanRegenHits; } }
@@ -4236,7 +4236,7 @@ namespace Server.Mobiles
 
         public virtual bool CheckTeach(SkillName skill, Mobile from)
         {
-            if (!CanTeach || Siege.SiegeShard)
+            if (!Siege.MobilesCanTeach && (!CanTeach || Siege.SiegeShard))
             {
                 return false;
             }
@@ -4286,11 +4286,11 @@ namespace Server.Mobiles
                 return TeachResult.Failure;
             }
 
-            int baseToSet = ourSkill.BaseFixedPoint / 3;
+            int baseToSet = ourSkill.BaseFixedPoint / Siege.TeachingDivisor;
 
-            if (baseToSet > 420)
+            if (baseToSet > Siege.TeachingCap)
             {
-                baseToSet = 420;
+                baseToSet = Siege.TeachingCap;
             }
             else if (baseToSet < 200)
             {
@@ -4589,11 +4589,11 @@ namespace Server.Mobiles
 
                     if (skill != null && theirSkill != null && skill.Base >= 60.0 && CheckTeach(skill.SkillName, from))
                     {
-                        int toTeach = skill.BaseFixedPoint / 3;
+                        int toTeach = skill.BaseFixedPoint / Siege.TeachingDivisor;
 
-                        if (toTeach > 420)
+                        if (toTeach > Siege.TeachingCap)
                         {
-                            toTeach = 420;
+                            toTeach = Siege.TeachingCap;
                         }
 
                         list.Add(new TeachEntry((SkillName)i, this, from, (toTeach > theirSkill.BaseFixedPoint)));

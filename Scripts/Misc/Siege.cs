@@ -17,6 +17,21 @@ namespace Server
 	{
 		public static bool SiegeShard = Config.Get("Siege.IsSiege", false);
 		public static int CharacterSlots = Config.Get("Siege.CharacterSlots", 1);
+
+		public static bool MobilesCanTeach = Config.Get("Siege.MobilesCanTeach", false);
+		public static int TeachingDivisor = Config.Get("Siege.TeachingDivisor", 3);
+		public static int TeachingCap = Config.Get("Siege.TeachingCap", 420);
+		public static int KillsToMurderer = Config.Get("Siege.KillsToMurderer", 5);
+		public static bool AllowCustomKeepAndCastle = Config.Get("Siege.AllowCustomKeepAndCastle", false);
+		public static bool KeepEquippedOnDeath = Config.Get("Siege.KeepEquippedOnDeath", false);
+		public static bool EnableRecallSacredJourney = Config.Get("Siege.EnableRecallSacredJourney", false);
+		public static int RecallSacredJourneyBaseDelayMultiplier = Config.Get("Siege.RecallSacredJourneyBaseDelayMultiplier", 1);
+		public static bool UseCustomStartingCities = Config.Get("Siege.UseCustomStartingCities", false);
+		public static double PetBondingDelay = Config.Get("Siege.PetBondingDelay", 7.0d);
+		public static bool DisableROT = Config.Get("Siege.DisableROT", false);
+		public static double KeepAndCastlePriceMultiplier = Config.Get("Siege.KeepAndCastlePriceMultiplier", 1.0d);
+		public static double CustomizableHousePriceMultiplier = Config.Get("Siege.CustomizableHousePriceMultiplier", 1.0d);
+
 		public static string FilePath = Path.Combine("Saves", "Siege.bin");
 
 		public static int StatsPerDay = 15;
@@ -265,7 +280,7 @@ namespace Server
 				case TravelCheckType.RecallFrom:
 				case TravelCheckType.RecallTo:
 				{
-					return false;
+					return EnableRecallSacredJourney;
 				}
 				case TravelCheckType.GateFrom:
 				case TravelCheckType.GateTo:

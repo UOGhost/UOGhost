@@ -56,6 +56,13 @@ namespace Server.Spells.Fourth
                 return SpellCircle.Fourth;
             }
         }
+        public override TimeSpan CastDelayBase
+        {
+            get
+            {
+                return TimeSpan.FromMilliseconds(((4 + (int)Circle) * CastDelaySecondsPerTick)  * 1000 * Siege.RecallSacredJourneyBaseDelayMultiplier) ;
+            }
+        }
         public override void GetCastSkills(out double min, out double max)
         {
             if (NoSkillRequirement)	//recall using Runebook charge, wraith form or using vendor search map

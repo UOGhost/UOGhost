@@ -3856,6 +3856,10 @@ namespace Server.Mobiles
 
 		public override DeathMoveResult GetParentMoveResultFor(Item item)
 		{
+			if (Siege.KeepEquippedOnDeath && item.LootType != LootType.Cursed) {
+				return DeathMoveResult.RemainEquiped;
+			}
+
 			if (CheckInsuranceOnDeath(item) && !Young)
 			{
 				return DeathMoveResult.MoveToBackpack;

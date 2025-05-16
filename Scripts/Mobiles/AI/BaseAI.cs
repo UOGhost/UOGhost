@@ -472,11 +472,11 @@ namespace Server.Mobiles
 
 							if (skill != null && theirSkill != null && skill.Base >= 60.0 && m_Mobile.CheckTeach(skill.SkillName, e.Mobile))
 							{
-								var toTeach = skill.Base / 3.0;
+								var toTeach = skill.Base / Siege.TeachingDivisor;
 
-								if (toTeach > 42.0)
+								if (toTeach > Siege.TeachingCap)
 								{
-									toTeach = 42.0;
+									toTeach = Siege.TeachingCap;
 								}
 
 								if (toTeach > theirSkill.Base)

@@ -51,3 +51,28 @@ make
 
 
    [ServUO]: <https://www.servuo.com>
+
+
+# Custom Changes
+
+- Set server name
+- Siege Ruleset
+- Disable Siege ROT
+- Sacred Journey & Recall re-enabled & Cast Delay multiplied by 4
+- Keep equipped items on death (except cursed)
+- NPCs train skills upto 100
+- Add selections for starting city (Britain, Yew, Minoc, Moonglow, Trinsic, Jhelom, Skara Brae)
+- Pet Bonding Delay changed from 7 days to 0 days
+- A single kill makes you Red
+- Use gold as soverigns (1000x multiplier)
+- Enable Customizable Keep & Castle, Fix Keep/Castle swap lists, Adjust Keep/Castle/Customizable House pricing
+
+## WIP
+
+- Fix missing NPC spawn locations (Ter Mur)
+- Remove house vendor upkeep
+
+## Setup
+
+- Place a copy of client files adjacent to this repo in a folder named 'Ultima Online Classic'
+- Login as owner and run `[createworld`, `[xmlload spawns`, `[DecorateSA`, `[GenMiniChamp` and then `[save`
