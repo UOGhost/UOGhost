@@ -1,0 +1,14 @@
+[Unit]
+Description=UOGhost Service
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/UOGhost
+ExecStart=/home/UOGhost/ServUO.sh
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

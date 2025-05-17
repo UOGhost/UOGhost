@@ -74,6 +74,7 @@ make
 
 ## Setup
 
-- `apt install zlib1g-dev`
+- Run `apt install zlib1g-dev`
 - Place a copy of client files adjacent to this repo in a folder named 'UOClassic'
+- Create systemctl service using `uoghostd`
 - Login as owner and run `[createworld`, `[xmlload spawns`, `[DecorateSA`, `[GenMiniChamp` and then `[save`
