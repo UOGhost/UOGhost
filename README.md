@@ -74,7 +74,6 @@ make
 
 ## Missing Spawns
 
-Royal City Bank, Stables
 Lions
 Umbra Necromancer
 
