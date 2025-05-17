@@ -72,6 +72,12 @@ make
 - Fix missing NPC spawn locations (Ter Mur)
 - Remove house vendor upkeep
 
+## Missing Spawns
+
+Royal City Bank, Stables
+Lions
+Umbra Necromancer
+
 ## Setup compilation
 
 - Run `apt install zlib1g-dev`
