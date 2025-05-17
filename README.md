@@ -67,14 +67,32 @@ make
 - Use gold as soverigns (1000x multiplier)
 - Enable Customizable Keep & Castle, Fix Keep/Castle swap lists, Adjust Keep/Castle/Customizable House pricing
 
-## WIP
+## WIP Changes
 
 - Fix missing NPC spawn locations (Ter Mur)
 - Remove house vendor upkeep
 
-## Setup
+## Setup compilation
 
 - Run `apt install zlib1g-dev`
 - Place a copy of client files adjacent to this repo in a folder named 'UOClassic'
-- Create systemctl service using `uoghostd`
-- Login as owner and run `[createworld`, `[xmlload spawns`, `[DecorateSA`, `[GenMiniChamp` and then `[save`
+
+## Setup Service
+
+```
+cp /home/UOGhost/uoghostd.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable uoghostd.service
+systemctl start uoghostd.service
+```
+
+## Setup World
+
+In game as owner:
+
+```
+[createworld
+[xmlload spawns
+[GenMiniChamp
+[save
+```
