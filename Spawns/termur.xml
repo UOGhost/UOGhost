@@ -1354,8 +1354,8 @@
     <CentreX>772</CentreX>
     <CentreY>3486</CentreY>
     <CentreZ>-20</CentreZ>
-    <Range>5</Range>
-    <MaxCount>1</MaxCount>
+    <Range>4</Range>
+    <MaxCount>3</MaxCount>
     <MinDelay>5</MinDelay>
     <MaxDelay>10</MaxDelay>
     <DelayInSec>False</DelayInSec>
