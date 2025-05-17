@@ -1389,12 +1389,12 @@
     <Name>Termur Bank</Name>
     <UniqueId>cc5bea53-3932-4567-8f93-2feaef15965c</UniqueId>
     <Map>TerMur</Map>
-    <X>843</X>
-    <Y>3440</Y>
+    <X>842</X>
+    <Y>3439</Y>
     <Width>10</Width>
     <Height>10</Height>
-    <CentreX>843</CentreX>
-    <CentreY>3440</CentreY>
+    <CentreX>842</CentreX>
+    <CentreY>3439</CentreY>
     <CentreZ>-20</CentreZ>
     <Range>4</Range>
     <MaxCount>1</MaxCount>
