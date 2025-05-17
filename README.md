@@ -74,5 +74,6 @@ make
 
 ## Setup
 
-- Place a copy of client files adjacent to this repo in a folder named 'Ultima Online Classic'
+- `apt install zlib1g-dev`
+- Place a copy of client files adjacent to this repo in a folder named 'UOClassic'
 - Login as owner and run `[createworld`, `[xmlload spawns`, `[DecorateSA`, `[GenMiniChamp` and then `[save`
