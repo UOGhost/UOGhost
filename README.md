@@ -84,6 +84,7 @@ cp /home/UOGhost/uoghostd.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable uoghostd.service
 systemctl start uoghostd.service
+journalctl -u uoghostd.service -f
 ```
 
 ## Setup World
