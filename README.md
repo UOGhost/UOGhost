@@ -93,7 +93,7 @@ In game as owner:
 
 ```
 [createworld
-[xmlload spawns
+[xmlload Spawns
 [GenMiniChamp
 [save
 ```
