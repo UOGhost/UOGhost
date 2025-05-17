@@ -210,11 +210,11 @@
     <Map>TerMur</Map>
     <X>521</X>
     <Y>1800</Y>
-    <Width>100</Width>
-    <Height>100</Height>
-    <CentreX>614</CentreX>
-    <CentreY>1748</CentreY>
-    <CentreZ>48</CentreZ>
+    <Width>10</Width>
+    <Height>10</Height>
+    <CentreX>521</CentreX>
+    <CentreY>1800</CentreY>
+    <CentreZ>10</CentreZ>
     <Range>4</Range>
     <MaxCount>1</MaxCount>
     <MinDelay>1</MinDelay>
