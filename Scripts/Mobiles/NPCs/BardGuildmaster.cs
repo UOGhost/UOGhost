@@ -8,12 +8,11 @@ namespace Server.Mobiles
         public BardGuildmaster()
             : base("bard")
         {
-            this.SetSkill(SkillName.Archery, 80.0, 100.0);
-            this.SetSkill(SkillName.Discordance, 80.0, 100.0);
-            this.SetSkill(SkillName.Musicianship, 80.0, 100.0);
-            this.SetSkill(SkillName.Peacemaking, 80.0, 100.0);
-            this.SetSkill(SkillName.Provocation, 80.0, 100.0);
-            this.SetSkill(SkillName.Swords, 80.0, 100.0);
+            this.SetSkill(SkillName.Discordance, 100.0);
+            this.SetSkill(SkillName.Musicianship, 100.0);
+            this.SetSkill(SkillName.Peacemaking, 100.0);
+            this.SetSkill(SkillName.Provocation, 100.0);
+            this.SetSkill(SkillName.Begging, 100.0);
         }
 
         public BardGuildmaster(Serial serial)

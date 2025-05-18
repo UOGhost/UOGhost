@@ -12,6 +12,7 @@ namespace Server.Mobiles
             : base("the keeper of tradition")
         { 
             this.Name = "Lorekeeper Aneen";
+            this.SetSkill(SkillName.Spellweaving, 100.0);
         }
 
         public Aneen(Serial serial)

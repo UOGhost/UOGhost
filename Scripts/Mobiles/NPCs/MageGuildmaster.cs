@@ -15,13 +15,13 @@ namespace Server.Mobiles
         public MageGuildmaster()
             : base("mage")
         {
-            SetSkill(SkillName.EvalInt, 85.0, 100.0);
-            SetSkill(SkillName.Inscribe, 65.0, 88.0);
-            SetSkill(SkillName.MagicResist, 64.0, 100.0);
-            SetSkill(SkillName.Magery, 90.0, 100.0);
-            SetSkill(SkillName.Wrestling, 60.0, 83.0);
-            SetSkill(SkillName.Meditation, 85.0, 100.0);
-            SetSkill(SkillName.Macing, 36.0, 68.0);
+            SetSkill(SkillName.EvalInt, 100.0);
+            SetSkill(SkillName.Inscribe, 100.0);
+            SetSkill(SkillName.MagicResist, 100.0);
+            SetSkill(SkillName.Magery, 100.0);
+            SetSkill(SkillName.Wrestling, 100.0);
+            SetSkill(SkillName.Meditation, 100.0);
+            SetSkill(SkillName.Alchemy, 100.0);
         }
         
         public MageGuildmaster(Serial serial)

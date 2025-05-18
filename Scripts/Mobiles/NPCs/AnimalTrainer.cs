@@ -21,9 +21,10 @@ namespace Server.Mobiles
 		public AnimalTrainer()
 			: base("the animal trainer")
 		{
-			SetSkill(SkillName.AnimalLore, 64.0, 100.0);
-			SetSkill(SkillName.AnimalTaming, 90.0, 100.0);
-			SetSkill(SkillName.Veterinary, 65.0, 88.0);
+			SetSkill(SkillName.AnimalLore, 100.0);
+			SetSkill(SkillName.AnimalTaming, 100.0);
+			SetSkill(SkillName.Veterinary, 100.0);
+			SetSkill(SkillName.Herding, 100.0);
 		}
 
 		public AnimalTrainer(Serial serial)

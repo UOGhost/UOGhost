@@ -14,7 +14,7 @@ namespace Server.Mobiles
             this.InitStats(100, 100, 25);
 
             this.SetSkill(SkillName.ArmsLore, 64.0, 80.0);
-            this.SetSkill(SkillName.Bushido, 64.0, 85.0);
+            this.SetSkill(SkillName.Bushido, 100.0);
             this.SetSkill(SkillName.Parry, 64.0, 80.0);
             this.SetSkill(SkillName.Swords, 64.0, 85.0);
 

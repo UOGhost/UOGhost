@@ -15,7 +15,7 @@ namespace Server.Mobiles
 
             this.SetSkill(SkillName.Fencing, 64.0, 80.0);
             this.SetSkill(SkillName.Macing, 64.0, 80.0);
-            this.SetSkill(SkillName.Ninjitsu, 60.0, 80.0);
+            this.SetSkill(SkillName.Ninjitsu, 100.0);
             this.SetSkill(SkillName.Parry, 64.0, 80.0);
             this.SetSkill(SkillName.Tactics, 64.0, 85.0);
             this.SetSkill(SkillName.Swords, 64.0, 85.0);

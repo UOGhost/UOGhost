@@ -13,7 +13,8 @@ namespace Server.Mobiles
 		{
 			SetSkill( SkillName.EvalInt, 80.0, 100.0 );
 			SetSkill( SkillName.Inscribe, 80.0, 100.0 );
-			SetSkill( SkillName.Necromancy, 80.0, 100.0 );
+			SetSkill( SkillName.Necromancy, 100.0 );
+			SetSkill( SkillName.SpiritSpeak, 100.0 );
 			SetSkill( SkillName.Meditation, 80.0, 100.0 );
 			SetSkill( SkillName.MagicResist, 80.0, 100.0 );
 

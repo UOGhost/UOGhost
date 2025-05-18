@@ -8,7 +8,8 @@ namespace Server.Mobiles
         public TailorGuildmaster()
             : base("tailor")
         {
-            this.SetSkill(SkillName.Tailoring, 90.0, 100.0);
+            this.SetSkill(SkillName.ArmsLore, 100.0);
+            this.SetSkill(SkillName.Tailoring, 100.0);
         }
 
         public TailorGuildmaster(Serial serial)

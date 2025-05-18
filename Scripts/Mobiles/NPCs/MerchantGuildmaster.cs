@@ -8,8 +8,9 @@ namespace Server.Mobiles
         public MerchantGuildmaster()
             : base("merchant")
         {
-            this.SetSkill(SkillName.ItemID, 85.0, 100.0);
-            this.SetSkill(SkillName.ArmsLore, 85.0, 100.0);
+            this.SetSkill(SkillName.ItemID, 100.0);
+            this.SetSkill(SkillName.TasteID, 100.0);
+            this.SetSkill(SkillName.ArmsLore, 100.0);
         }
 
         public MerchantGuildmaster(Serial serial)

@@ -9,8 +9,8 @@ namespace Server.Mobiles
         public BlacksmithGuildmaster()
             : base("blacksmith")
         {
-            SetSkill(SkillName.ArmsLore, 65.0, 88.0);
-            SetSkill(SkillName.Blacksmith, 90.0, 100.0);
+            SetSkill(SkillName.ArmsLore, 100.0);
+            SetSkill(SkillName.Blacksmith, 100.0);
             SetSkill(SkillName.Macing, 36.0, 68.0);
             SetSkill(SkillName.Parry, 36.0, 68.0);
         }

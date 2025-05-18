@@ -80,7 +80,7 @@ namespace Server.Engines.Quests
             SetSkill(SkillName.Anatomy, 65.0, 90.0);
             SetSkill(SkillName.MagicResist, 65.0, 90.0);
             SetSkill(SkillName.Tactics, 65.0, 90.0);
-            SetSkill(SkillName.Throwing, 65.0, 90.0);
+            SetSkill(SkillName.Throwing, 100.0);
         }
 
         public Agralem(Serial serial)

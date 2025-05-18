@@ -8,11 +8,11 @@ namespace Server.Mobiles
         public HealerGuildmaster()
             : base("healer")
         {
-            this.SetSkill(SkillName.Anatomy, 85.0, 100.0);
-            this.SetSkill(SkillName.Healing, 90.0, 100.0);
-            this.SetSkill(SkillName.Forensics, 75.0, 98.0);
-            this.SetSkill(SkillName.MagicResist, 75.0, 98.0);
-            this.SetSkill(SkillName.SpiritSpeak, 65.0, 88.0);
+            this.SetSkill(SkillName.Anatomy, 100.0);
+            this.SetSkill(SkillName.Healing, 100.0);
+            this.SetSkill(SkillName.Forensics, 100.0);
+            this.SetSkill(SkillName.MagicResist, 100.0);
+            this.SetSkill(SkillName.SpiritSpeak, 100.0);
         }
 
         public HealerGuildmaster(Serial serial)

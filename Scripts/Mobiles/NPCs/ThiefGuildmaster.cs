@@ -9,15 +9,13 @@ namespace Server.Mobiles
         public ThiefGuildmaster()
             : base("thief")
         {
-            this.SetSkill(SkillName.DetectHidden, 75.0, 98.0);
-            this.SetSkill(SkillName.Hiding, 65.0, 88.0);
-            this.SetSkill(SkillName.Lockpicking, 85.0, 100.0);
-            this.SetSkill(SkillName.Snooping, 90.0, 100.0);
-            this.SetSkill(SkillName.Poisoning, 60.0, 83.0);
-            this.SetSkill(SkillName.Stealing, 90.0, 100.0);
-            this.SetSkill(SkillName.Fencing, 75.0, 98.0);
-            this.SetSkill(SkillName.Stealth, 85.0, 100.0);
-            this.SetSkill(SkillName.RemoveTrap, 85.0, 100.0);
+            this.SetSkill(SkillName.DetectHidden, 100.0);
+            this.SetSkill(SkillName.Hiding, 100.0);
+            this.SetSkill(SkillName.Snooping, 100.0);
+            this.SetSkill(SkillName.Poisoning, 100.0);
+            this.SetSkill(SkillName.Stealing, 100.0);
+            this.SetSkill(SkillName.Fencing, 100.0);
+            this.SetSkill(SkillName.Stealth, 100.0);
         }
 
         public ThiefGuildmaster(Serial serial)
