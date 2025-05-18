@@ -55,7 +55,6 @@ make
 
 # Custom Changes
 
-- Set server name
 - Siege Ruleset
 - Disable Siege ROT
 - Sacred Journey & Recall re-enabled & Cast Delay multiplied by 4
