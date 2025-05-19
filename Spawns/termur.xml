@@ -756,6 +756,48 @@
     <Objects2>carpenter:MX=1:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
   </Points>
   <Points>
+    <Name>Tomb of Kings Chaga Mushrooms</Name>
+    <UniqueId>2c8c6331-334e-4096-bcab-2c6b4fdb0b5b</UniqueId>
+    <Map>TerMur</Map>
+    <X>35</X>
+    <Y>62</Y>
+    <Width>10</Width>
+    <Height>10</Height>
+    <CentreX>35</CentreX>
+    <CentreY>62</CentreY>
+    <CentreZ>0</CentreZ>
+    <Range>10</Range>
+    <MaxCount>10</MaxCount>
+    <MinDelay>1</MinDelay>
+    <MaxDelay>1</MaxDelay>
+    <DelayInSec>False</DelayInSec>
+    <Duration>0</Duration>
+    <DespawnTime>0</DespawnTime>
+    <ProximityRange>-1</ProximityRange>
+    <ProximityTriggerSound>500</ProximityTriggerSound>
+    <TriggerProbability>1</TriggerProbability>
+    <InContainer>False</InContainer>
+    <MinRefractory>0</MinRefractory>
+    <MaxRefractory>0</MaxRefractory>
+    <TODStart>0</TODStart>
+    <TODEnd>0</TODEnd>
+    <TODMode>0</TODMode>
+    <KillReset>1</KillReset>
+    <ExternalTriggering>False</ExternalTriggering>
+    <SequentialSpawning>-1</SequentialSpawning>
+    <AllowGhostTriggering>False</AllowGhostTriggering>
+    <AllowNPCTriggering>False</AllowNPCTriggering>
+    <SpawnOnTrigger>False</SpawnOnTrigger>
+    <SmartSpawning>False</SmartSpawning>
+    <TickReset>False</TickReset>
+    <Team>0</Team>
+    <Amount>1</Amount>
+    <IsGroup>True</IsGroup>
+    <IsRunning>True</IsRunning>
+    <IsHomeRangeRelative>True</IsHomeRangeRelative>
+    <Objects2>chagamushroom,10:MX=10:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
+  </Points>
+  <Points>
     <Name>Tomb of Kings 2</Name>
     <UniqueId>2c8c6331-334e-4096-bcab-2c6b4fdb0b5b</UniqueId>
     <Map>TerMur</Map>
