@@ -20,6 +20,14 @@ namespace Server.Mobiles
         {
         }
 
+        public override bool IsActiveVendor
+        {
+            get
+            {
+                return false;
+            }
+        }
+        
         protected override List<SBInfo> SBInfos
         {
             get

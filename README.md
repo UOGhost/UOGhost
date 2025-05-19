@@ -59,7 +59,7 @@ make
 - Disable Siege ROT
 - Sacred Journey & Recall re-enabled & Cast Delay multiplied by 4
 - Keep equipped items on death (except cursed)
-- NPCs train skills upto 100
+- NPCs train skills upto 100: All Guildmasters, Animal Trainer, Necromancer, Keeper of Chivalry, Ninja, Samurai, Aneen(Spellweaving), Ansikart(Imbuing), Agralem(Throwing), Mystic
 - Add selections for starting city (Britain, Yew, Minoc, Moonglow, Trinsic, Jhelom, Skara Brae)
 - Pet Bonding Delay changed from 7 days to 0 days
 - A single kill makes you Red
