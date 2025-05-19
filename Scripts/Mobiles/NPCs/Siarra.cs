@@ -87,7 +87,6 @@ namespace Server.Engines.Quests
         { 
             this.SetSkill(SkillName.Meditation, 60.0, 83.0);
             this.SetSkill(SkillName.Focus, 60.0, 83.0);
-            this.SetSkill(SkillName.Spellweaving, 100.0);
         }
 
         public Siarra(Serial serial)
