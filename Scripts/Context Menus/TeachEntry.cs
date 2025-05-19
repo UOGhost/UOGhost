@@ -9,7 +9,7 @@ namespace Server.ContextMenus
         private readonly BaseCreature m_Mobile;
         private readonly Mobile m_From;
         public TeachEntry(SkillName skill, BaseCreature m, Mobile from, bool enabled)
-            : base(6000 + (int)skill)
+            : base(skill == SkillName.Spellweaving ? 6103 : 6000 + (int)skill)
         {
             this.m_Skill = skill;
             this.m_Mobile = m;

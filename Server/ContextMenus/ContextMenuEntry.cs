@@ -78,12 +78,7 @@ namespace Server.ContextMenus
 		///     <seealso cref="Range" />
 		/// </param>
 		public ContextMenuEntry(int number, int range)
-		{
-			if number == 6054 //'Train Spellweaving' does not exist
-			{
-				number = 6103 //Use 'Buy' instead
-			}
-			
+		{	
 			if (number <= 0x7FFF) // Legacy code support
 			{
 				Number = 3000000 + number;
