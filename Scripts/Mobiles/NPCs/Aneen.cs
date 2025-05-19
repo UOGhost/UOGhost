@@ -12,7 +12,6 @@ namespace Server.Mobiles
             : base("the keeper of tradition")
         { 
             this.Name = "Lorekeeper Aneen";
-            this.SetSkill(SkillName.Spellweaving, 100.0);
         }
 
         public Aneen(Serial serial)
@@ -20,6 +19,20 @@ namespace Server.Mobiles
         {
         }
 
+        public override bool CanTeach
+        {
+            get
+            {
+                return false;
+            }
+        }
+        public override bool IsInvulnerable
+        {
+            get
+            {
+                return true;
+            }
+        }
         protected override List<SBInfo> SBInfos
         {
             get
