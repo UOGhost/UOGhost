@@ -70,6 +70,10 @@ make
 
 - Fix missing NPC spawn locations (Ter Mur)
 - Remove house vendor upkeep
+- Fix mounted while dead
+- Add Cleanup britannia
+- Investigate lag spike
+- Ter mur bard
 
 ## Setup compilation
 
