@@ -68,12 +68,10 @@ make
 
 ## WIP Changes
 
-- Fix missing NPC spawn locations (Ter Mur)
+- Fix missing NPC spawn locations (Ter Mur): Royal City Bard
 - Remove house vendor upkeep
-- Fix mounted while dead
 - Add Cleanup britannia
 - Investigate lag spike
-- Ter mur bard
 
 ## Setup compilation
 
