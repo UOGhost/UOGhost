@@ -57,7 +57,7 @@ make
 
 - Siege Ruleset
 - Disable Siege ROT
-- Sacred Journey & Recall re-enabled & Cast Delay multiplied by 4
+- Sacred Journey & Recall re-enabled & Cast Delay multiplied by 3
 - Keep equipped items on death (except cursed)
 - NPCs train skills upto 100: All Guildmasters, Animal Trainer, Necromancer, Keeper of Chivalry, Ninja, Samurai, Aneen(Spellweaving), Ansikart(Imbuing), Agralem(Throwing), Mystic
 - Add selections for starting city (Britain, Yew, Minoc, Moonglow, Trinsic, Jhelom, Skara Brae)
@@ -65,12 +65,12 @@ make
 - A single kill makes you Red
 - Use gold as soverigns (1000x multiplier)
 - Enable Customizable Keep & Castle, Fix Keep/Castle swap lists, Adjust Keep/Castle/Customizable House pricing
+- Added Cleanup Barrel and Officer to Tokuno and Luna Bank 
 
 ## WIP Changes
 
 - Fix missing NPC spawn locations (Ter Mur): Royal City Bard
 - Remove house vendor upkeep
-- Add Cleanup britannia
 - Investigate lag spike
 
 ## Setup compilation
