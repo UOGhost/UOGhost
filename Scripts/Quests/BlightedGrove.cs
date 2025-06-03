@@ -213,7 +213,7 @@ namespace Server.Engines.Quests
             }
         }
         /* This is some nasty stuff, that's for certain.  I don't even want to think about what sort of blight 
-        caused this venomous reaction from that old tree.  Let's get to work … we'll need to try something really 
+        caused this venomous reaction from that old tree.  Let's get to work ï¿½ we'll need to try something really 
         hard but still workable as our base material.  Nothing's harder than stone and diamond.  Let's try them first. */
         public override object Description
         {
@@ -425,11 +425,9 @@ namespace Server.Engines.Quests
 
         public override void OnCompleted()
         {
+            this.Owner.AcquireRecipe((int)Server.Engines.Craft.SmithRecipes.BoneMachete);
             if (this.Owner.Skills.Blacksmith.Value >= 45.0)
-            {
-                this.Owner.AcquireRecipe((int)Server.Engines.Craft.SmithRecipes.BoneMachete);
                 this.Owner.SendLocalizedMessage(1075006); // You have learned how to smith a bone handled machete!
-            }
             else
                 this.Owner.SendLocalizedMessage(1075005); // You observe carefully but you can't grasp the complexities of smithing a bone handled machete.
         }
@@ -476,7 +474,7 @@ namespace Server.Engines.Quests
         }
         /* Wonderful!  Now we can both get in there!  Let me show you these instructions for making this machete.  
         If you're not skilled in smithing, I'm not sure how much sense it will make though.  Listen, if you're 
-        heading in there anyway … maybe you'd do me one more favor?  I'm ah ... buried in work out here ... so if 
+        heading in there anyway ï¿½ maybe you'd do me one more favor?  I'm ah ... buried in work out here ... so if 
         you'd go in and get me a few water samples, I'd be obliged. */
         public override object Description
         {
