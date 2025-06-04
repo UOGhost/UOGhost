@@ -1108,6 +1108,11 @@ namespace Server
             
             ++m_Saves;
 
+			if (message)
+			{
+				Broadcast(0x35, true, AccessLevel.Player, "The world is saving, please wait.");
+			}
+
 			NetState.FlushAll();
 			NetState.Pause();
 
@@ -1116,11 +1121,6 @@ namespace Server
 			m_Saving = true;
 
 			m_DiskWriteHandle.Reset();
-
-			if (message)
-			{
-				Broadcast(0x35, true, AccessLevel.Player, "The world is saving, please wait.");
-			}
 
 			SaveStrategy strategy = SaveStrategy.Acquire();
 			Console.WriteLine("Core: Using {0} save strategy", strategy.Name.ToLowerInvariant());
@@ -1190,21 +1190,21 @@ namespace Server
 
 			Console.WriteLine("Save finished in {0:F2} seconds.", watch.Elapsed.TotalSeconds);
 
+			NetState.Resume();
+
 			if (message)
 			{
 				Broadcast(0x35, true, AccessLevel.Player, "World save done in {0:F1} seconds.", watch.Elapsed.TotalSeconds);
 			}
-
-			NetState.Resume();
-
+			
             try
-            {
-                EventSink.InvokeAfterWorldSave(new AfterWorldSaveEventArgs());
-            }
-            catch (Exception e)
-            {
-                throw new Exception("FATAL: Exception in EventSink.AfterWorldSave", e);
-            }
+			{
+				EventSink.InvokeAfterWorldSave(new AfterWorldSaveEventArgs());
+			}
+			catch (Exception e)
+			{
+				throw new Exception("FATAL: Exception in EventSink.AfterWorldSave", e);
+			}
         }
 
 		internal static List<Type> m_ItemTypes = new List<Type>();
