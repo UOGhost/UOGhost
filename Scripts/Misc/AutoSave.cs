@@ -55,7 +55,7 @@ namespace Server.Misc
 
         public static void Save()
         {
-            Save(false);
+            Save(true);
         }
 
         public static void Save(bool permitBackgroundWrite)
