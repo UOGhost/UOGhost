@@ -55,7 +55,9 @@ namespace Server.Misc
 
         public static void Save()
         {
+            World.Broadcast(0x35, true, "World save started, please wait.");
             Save(false);
+            World.Broadcast(0x35, true, "World save completed.");
         }
 
         public static void Save(bool permitBackgroundWrite)
