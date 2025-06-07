@@ -129,10 +129,15 @@ namespace Server.Mobiles
             {
                 FelInstance = this;
             }
+            else if (Map == Map.Tokuno)
+            {
+                TokunoInstance = this;
+            }
         }
 
         public static SeaMarketOfficer TramInstance { get; set; }
         public static SeaMarketOfficer FelInstance { get; set; }
+        public static SeaMarketOfficer TokunoInstance { get; set; }
 
         public static void Initialize()
         {
@@ -148,6 +153,12 @@ namespace Server.Mobiles
                 {
                     FelInstance = new SeaMarketOfficer();
                     FelInstance.MoveToWorld(new Point3D(4543, 2299, -1), Map.Felucca);
+                }
+
+                if (TokunoInstance == null)
+                {
+                    TokunoInstance = new SeaMarketOfficer();
+                    TokunoInstance.MoveToWorld(new Point3D(704, 1360, 6), Map.Tokuno);
                 }
             }
         }
