@@ -455,9 +455,9 @@ namespace Server.Engines.Quests
                         hold.DropItem(item);
                 }
 
-                hold.DropItem(new Swab());
+                //hold.DropItem(new Swab());
                 hold.DropItem(new Ramrod());
-                hold.DropItem(new Matches(Utility.RandomMinMax(25, 30)));
+                //hold.DropItem(new Matches(Utility.RandomMinMax(25, 30)));
                 hold.DropItem(new HeavyCannonball(Utility.RandomMinMax(14, 20)));
                 hold.DropItem(new LightCannonball(Utility.RandomMinMax(14, 20)));
                 hold.DropItem(new HeavyGrapeshot(Utility.RandomMinMax(14, 20)));
