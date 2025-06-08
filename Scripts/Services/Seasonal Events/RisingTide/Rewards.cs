@@ -633,4 +633,60 @@ namespace Server.Items
             int version = reader.ReadInt();
         }
     }
+
+    public class HooksShield : BaseShield
+    {
+        [Constructable]
+        public HooksShield()
+            : base(0xA64A)
+        {
+            Weight = 8.0;
+        }
+
+        public HooksShield(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override bool IsArtifact { get { return true; } }
+
+        public override bool CanBeWornByGargoyles { get { return true; } }
+
+        [Constructable]
+        public HooksShield()
+        {
+            Attributes.SpellChanneling = 1;
+            Attributes.DefendChance = 15;
+            Attributes.SpellDamage = 10;
+            Attributes.CastSpeed = 1;
+            FireBonus = 10;
+            PoisonBonus = 10;
+            MaxHitPoints = 255;
+        }
+
+        public HooksShield(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override int AosStrReq
+        {
+            get
+            {
+                return 20;
+            }
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write(0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
 }

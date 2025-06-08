@@ -81,6 +81,7 @@ namespace Server.Engines.RisingTide
             Rewards.Add(new CollectionItem(typeof(BladedWhipOfPlundering), 0xA28B, 0, 0, 180000));
             Rewards.Add(new CollectionItem(typeof(BarbedWhipOfPlundering), 0xA28B, 0, 0, 180000));
             Rewards.Add(new CollectionItem(typeof(TritonStatue), 0xA2D8, 0, 2713, 140000));
+            Rewards.Add(new CollectionItem(typeof(HooksShield), 0xA64A, 0, 0, 200000));
         }
     }
 }
