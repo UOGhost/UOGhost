@@ -641,20 +641,6 @@ namespace Server.Items
             : base(0xA64A)
         {
             Weight = 8.0;
-        }
-
-        public HooksShield(Serial serial)
-            : base(serial)
-        {
-        }
-
-        public override bool IsArtifact { get { return true; } }
-
-        public override bool CanBeWornByGargoyles { get { return true; } }
-
-        [Constructable]
-        public HooksShield()
-        {
             Attributes.SpellChanneling = 1;
             Attributes.DefendChance = 15;
             Attributes.SpellDamage = 10;
@@ -668,6 +654,10 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+        public override bool IsArtifact { get { return true; } }
+
+        public override bool CanBeWornByGargoyles { get { return true; } }
 
         public override int AosStrReq
         {
