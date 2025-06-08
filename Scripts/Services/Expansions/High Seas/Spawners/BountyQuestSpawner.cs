@@ -455,20 +455,15 @@ namespace Server.Engines.Quests
                         hold.DropItem(item);
                 }
 
-                //hold.DropItem(new Swab());
                 hold.DropItem(new Ramrod());
-                //hold.DropItem(new Matches(Utility.RandomMinMax(25, 30)));
-                hold.DropItem(new HeavyCannonball(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new LightCannonball(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new HeavyGrapeshot(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new LightGrapeshot(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new HeavyPowderCharge(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new LightPowderCharge(Utility.RandomMinMax(14, 20)));
-                hold.DropItem(new FuseCord(Utility.RandomMinMax(28, 40)));
+                hold.DropItem(new Cannonball(Utility.RandomMinMax(15, 25)));
+                hold.DropItem(new Grapeshot(Utility.RandomMinMax(15, 25)));
+                hold.DropItem(new PowderCharge(Utility.RandomMinMax(15, 25)));
+                hold.DropItem(new FuseCord(Utility.RandomMinMax(15, 25)));
 
-                hold.DropItem(new IronIngot(Utility.RandomMinMax(120, 150)));
-                hold.DropItem(new Board(Utility.RandomMinMax(240, 300)));
-                hold.DropItem(new Cloth(Utility.RandomMinMax(240, 300)));
+                hold.DropItem(new IronIngot(Utility.RandomMinMax(50, 100)));
+                hold.DropItem(new Board(Utility.RandomMinMax(100, 200)));
+                hold.DropItem(new Cloth(Utility.RandomMinMax(100, 200)));
 
                 if (.10 >= Utility.RandomDouble())
                     hold.DropItem(new SmugglersCache());
@@ -507,7 +502,7 @@ namespace Server.Engines.Quests
 
                 if (0.50 > Utility.RandomDouble())
                 {
-                    switch (Utility.Random(4))
+                    switch (Utility.Random(9))
                     {
                         case 0:
                         case 1:
@@ -634,15 +629,6 @@ namespace Server.Engines.Quests
                             hold.DropItem(new BarbedHides(Utility.RandomMinMax(40, 50)));
                         break;
                 }
-
-                switch (Utility.Random(4))
-                {
-                    case 0: hold.DropItem(new HeavyCannonball(Utility.RandomMinMax(5, 10))); break;
-                    case 1: hold.DropItem(new LightCannonball(Utility.RandomMinMax(5, 10))); break;
-                    case 2: hold.DropItem(new HeavyGrapeshot(Utility.RandomMinMax(5, 10))); break;
-                    case 3: hold.DropItem(new LightGrapeshot(Utility.RandomMinMax(5, 10))); break;
-                }
-
 
                 //Rares
                 if (0.8 > Utility.RandomDouble())
