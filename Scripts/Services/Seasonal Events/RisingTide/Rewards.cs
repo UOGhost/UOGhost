@@ -640,6 +640,7 @@ namespace Server.Items
         public HooksShield()
             : base(0xA64A)
         {
+            Name = "Hook's Shield";
             Weight = 8.0;
             Attributes.SpellChanneling = 1;
             Attributes.DefendChance = 15;
@@ -648,6 +649,7 @@ namespace Server.Items
             FireBonus = 10;
             PoisonBonus = 10;
             MaxHitPoints = 255;
+            HitPoints = MaxHitPoints;
         }
 
         public HooksShield(Serial serial)
