@@ -458,13 +458,17 @@ namespace Server.Engines.Quests
                 hold.DropItem(new Swab());
                 hold.DropItem(new Ramrod());
                 hold.DropItem(new Matches(Utility.RandomMinMax(25, 30)));
-                hold.DropItem(new HeavyCannonball(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new LightCannonball(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new HeavyGrapeshot(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new LightGrapeshot(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new HeavyPowderCharge(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new LightPowderCharge(Utility.RandomMinMax(7, 10)));
-                hold.DropItem(new FuseCord(Utility.RandomMinMax(7, 10)));
+                hold.DropItem(new HeavyCannonball(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new LightCannonball(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new HeavyGrapeshot(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new LightGrapeshot(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new HeavyPowderCharge(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new LightPowderCharge(Utility.RandomMinMax(14, 20)));
+                hold.DropItem(new FuseCord(Utility.RandomMinMax(28, 40)));
+
+                hold.DropItem(new IronIngot(Utility.RandomMinMax(120, 150)));
+                hold.DropItem(new Board(Utility.RandomMinMax(240, 300)));
+                hold.DropItem(new Cloth(Utility.RandomMinMax(240, 300)));
 
                 if (.10 >= Utility.RandomDouble())
                     hold.DropItem(new SmugglersCache());

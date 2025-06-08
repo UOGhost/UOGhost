@@ -984,7 +984,7 @@ namespace Server.Items
             if (pack == null)
                 return;
 
-            double ingotsNeeded = 36 * (int)DamageState;
+            double ingotsNeeded = 9 * (int)DamageState;
 
             ingotsNeeded -= ((double)from.Skills[SkillName.Blacksmith].Value / 200.0) * ingotsNeeded;
 
@@ -1085,7 +1085,7 @@ namespace Server.Items
 
         public void OnDamage(int damage, Mobile from)
         {
-            m_Hits -= damage;
+            m_Hits -= Utility.RandomMinMax(16, 20);
             InvalidateDamageState(from);
         }
 

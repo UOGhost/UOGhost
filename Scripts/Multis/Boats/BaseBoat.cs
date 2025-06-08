@@ -1274,8 +1274,8 @@ namespace Server.Multis
             SendMessageToAllOnBoard(1116765);  // The emergency repairs have given out!
         }
 
-        private static readonly double WoodPer = 17;
-        private static readonly double ClothPer = 17;
+        private static readonly double WoodPer = 4;
+        private static readonly double ClothPer = 4;
 
         private Type[] WoodTypes = new Type[] { typeof(Board),  typeof(OakBoard), typeof(AshBoard), typeof(YewBoard), typeof(HeartwoodBoard), typeof(BloodwoodBoard), typeof(FrostwoodBoard),
                                                 typeof(Log), typeof(OakLog), typeof(AshLog), typeof(YewLog), typeof(HeartwoodLog), typeof(BloodwoodLog), typeof(FrostwoodLog), };
